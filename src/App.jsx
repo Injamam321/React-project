@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import'./App.css'
 
 function Counter() {
-    const [count, setCount] = useState(0); //Hook
+    const [count, setCount] = useState(0); //Hook useState
 
     // function define 
     const increaseCount = () => {
@@ -15,7 +15,7 @@ function Counter() {
 
     return (
         <div>
-            <p>Count: {count}</p>
+            <h1><p>Count: {count}</p></h1>
             {/* calling function on button*/}
             <button onClick={increaseCount}>Increase</button>
             <button onClick={decreaseCount}>Decrease</button>
