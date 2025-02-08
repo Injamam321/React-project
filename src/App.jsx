@@ -13,14 +13,13 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <h1>Data: {alldata.length}</h1>
+    <div className='user-container'>
       {
         alldata.map(singleData => <Singleuserdata
 
            key={singleData.id}
           singleData = {singleData}
-          
+
         > </Singleuserdata>)
       }
     </div>
